@@ -1,0 +1,33 @@
+.ratings{
+	display: none;
+	flex-direction: row-reverse;
+	justify-content: center;
+	color:black;
+}
+.ratings span{
+	cursor: pointer;
+	transition: color .2s;
+	font-size: 50px;
+}
+.ratings span:hover{
+	color: #F4D03F;
+}
+.ratings span:hover ~ span{
+	color: #F4D03F;
+}
+.ratings span[data-clicked]{
+	color: #F4D03F;
+}
+.ratings span[data-clicked] ~ span{
+	color: #F4D03F;
+}	
+
+.header, output {
+	display: flex;
+	justify-content: center;
+}
+
+.nojs {
+	display: flex;
+	justify-content: center;
+}
